@@ -1,13 +1,16 @@
 $(document).ready(function() {
     var searchButton = $("#search");
+    var result = $("#result");
     
-    searchButton.on("click", function() {
-        $.ajax('request.php?q=definition', {
+    searchButton.on("click", function(element) {
+        element.preventDefault();
+        var word = $("input").val();
+        $.ajax('request.php?q=' + word, {
             method: 'GET'
         }).done(function(response) {
-            alert(response);
+            $("#result").html(response);
         }).fail(function() {
-            alert("There was a problem with the request.");
+            $("#result").html("There was a problem with the request.");
         });
     });
 });

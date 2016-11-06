@@ -7,7 +7,12 @@
     </head>
 
     <body>
-        <button id = "search">Search</button>
+        <form id = "form" action="request.php" method="get">
+            <label for="q">Word:</label>
+            <input type="text" name = "q" value="">
+            <button id = "search">Search</button>
+        </form>
+        
         <p id = "result"></p>
     </body>
 </html>
