@@ -23,9 +23,10 @@ $(document).ready(function() {
         element.preventDefault();
         var list = document.createElement("ol");
         $.ajax("request.php?q=&all=true", {
-            method: 'GET'
-        }).done(function(response) {
-            var definitions = $(response).find("item");
+            method: 'GET',
+            dataType: "xml"
+        }).done(function(responseXML) {
+            var definitions = $(responseXML).find("item");
             $(definitions).each(function() {
                 var listItem = document.createElement("li");
                 var heading = document.createElement("h3");
