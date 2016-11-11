@@ -1,0 +1,38 @@
+#heading {
+    background-color: purple;
+    height: 125px;
+    width: 825px;
+    color: white;
+    border-radius: 10px;
+    font-size: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#details {
+    background-color: grey;
+    width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+body {
+    color: white;
+}
+
+button {
+    height: 33px;
+    border-radius: 8px;
+    margin-left: 5px;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    border-radius: 5px;
+    height: 25px;
+}
